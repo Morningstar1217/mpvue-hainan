@@ -1,5 +1,5 @@
 var config = {
-    api_base_url: 'https://weiweiwo.shenshou.life/v1/'
+    api_base_url: 'https://api.it120.cc'
 }
 
 export { config }

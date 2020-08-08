@@ -1,4 +1,5 @@
 <script>
+import { xxx } from "./api/user";
 export default {
     created() {
         // 调用API从本地缓存中获取数据
@@ -23,6 +24,17 @@ export default {
             logs.unshift(Date.now())
             mpvue.setStorageSync('logs', logs)
         }
+
+        console.log('初始化');
+
+        xxx().then(
+            res => {
+                console.log(res.msg)
+            }
+        ).catch(err => {
+            console.error(err)
+            }
+        )
     },
     log() {
         console.log(`log at:${Date.now()}`)
@@ -31,14 +43,15 @@ export default {
 </script>
 
 <style lang="less">
+@f2: #f2f2f2;
 page {
-    background-color: #f2f2f2;
+    background-color: @f2;
 }
 
 .hr {
     width: 100%;
     height: 5px;
-    background-color: #f4f4f4;
+    background-color: @f2;
 }
 
 .flex_row {

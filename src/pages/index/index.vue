@@ -16,7 +16,7 @@
                         <div
                             v-for="(item, index) in menuList"
                             @click="changeMenu(index)"
-                            :key="item.id"
+                            :key="index"
                             :class="selectedIndex === index ? 'selected' : ''"
                         >
                             {{ item.title }}
@@ -33,7 +33,12 @@
                 <img src="/static/images/5de89a24a5f9a.jpg" />
             </div>
             <div class="mainMenuWrap">
-                <div class="menuList" v-for="item in menuList2" :key="item.id">
+                <div
+                    class="menuList"
+                    :style="defaultColor"
+                    v-for="(item, index) in menuList2"
+                    :key="index"
+                >
                     <img :src="item.imgUrl" />
                     <div>{{ item.title }}</div>
                 </div>
@@ -43,7 +48,7 @@
                 <div
                     class="articleList"
                     v-for="(item, index) in articleList"
-                    :key="item.id"
+                    :key="index"
                     @touchstart="touchStart(index, $event)"
                     @touchend="touchEnd(index, $event)"
                     @touchmove="touchMove(index, $event)"
@@ -77,7 +82,7 @@
                                 class="brandList"
                                 :class="brandIndex === ind ? 'selected' : ''"
                                 v-for="(item, ind) in myBrand"
-                                :key="item.id"
+                                :key="ind"
                                 @click.stop="changeBrand(ind)"
                             >
                                 {{ item.title }}
@@ -97,7 +102,7 @@
                 <div
                     class="articleList"
                     v-for="(item, index) in articleList"
-                    :key="item.id"
+                    :key="index"
                     @touchstart="touchStart(index, $event)"
                     @touchend="touchEnd(index, $event)"
                     @touchmove="touchMove(index, $event)"
@@ -131,7 +136,7 @@
                                 class="brandList"
                                 :class="brandIndex === ind ? 'selected' : ''"
                                 v-for="(item, ind) in myBrand"
-                                :key="item.id"
+                                :key="ind"
                                 @click.stop="changeBrand(ind)"
                             >
                                 {{ item.title }}
@@ -161,8 +166,8 @@
                     <div class="myMenuWrap flex_row">
                         <div
                             class="myMenuList"
-                            v-for="item in myMenuList"
-                            :key="item.id"
+                            v-for="(item, index) in myMenuList"
+                            :key="index"
                         >
                             {{ item.title }}
                             <img
@@ -182,8 +187,8 @@
                     <div class="myMenuWrap flex_row">
                         <div
                             class="myMenuList"
-                            v-for="item in myMenuList"
-                            :key="item.id"
+                            v-for="(item, index) in myMenuList"
+                            :key="index"
                         >
                             + {{ item.title }}
                         </div>
@@ -195,6 +200,8 @@
 </template>
 
 <script>
+import { xxx } from '@/api/user.js'
+import { config } from '@/config'
 export default {
     data() {
         return {
@@ -319,7 +326,8 @@ export default {
                     title: '阿咪多'
                 }
             ],
-            brandIndex: ''
+            brandIndex: '',
+            defaultColor: ''
         }
     },
     methods: {
@@ -352,7 +360,12 @@ export default {
                     '&title=' +
                     item.title
             })
-        }
+        },
+        getData() {}
+    },
+    async mounted() {
+        this.defaultColor = await config.defaultColor
+        this.getData()
     }
 }
 </script>

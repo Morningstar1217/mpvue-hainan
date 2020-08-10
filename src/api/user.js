@@ -1,14 +1,14 @@
 // user.js
 import request from '../utils/request'
-import { config } from '../config'
-let bsseUrl = config.api_base_url
+
+let baseUrl = 'https://api.it120.cc'
 
 /* 
     示例
 */
 export function xxx(data) {
     return request({
-        url: `${bsseUrl}`,
+        url: `${baseUrl}`,
         method: 'get', //get || post
         data
     })

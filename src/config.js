@@ -1,5 +1,13 @@
-var config = {
-    api_base_url: 'https://api.it120.cc'
-}
+import { xxx } from './api/user'
+
+var config = {}
+
+xxx()
+    .then(res => {
+        config.defaultColor = 'color:#ddd'
+    })
+    .catch(err => {
+        console.error(err)
+    })
 
 export { config }

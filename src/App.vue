@@ -1,5 +1,5 @@
 <script>
-import { xxx } from "./api/user";
+import { xxx } from './api/user'
 export default {
     created() {
         // 调用API从本地缓存中获取数据
@@ -24,17 +24,6 @@ export default {
             logs.unshift(Date.now())
             mpvue.setStorageSync('logs', logs)
         }
-
-        console.log('初始化');
-
-        xxx().then(
-            res => {
-                console.log(res.msg)
-            }
-        ).catch(err => {
-            console.error(err)
-            }
-        )
     },
     log() {
         console.log(`log at:${Date.now()}`)

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="header">
             <div class="userInfoWrap flex_row">
-                <img src="/static/images/demo1.png" class="userImg" />
+                <img src="/static/images/user.png" class="userImg" />
                 <div class="userInfo">
                     <div class="userName">
                         胖墩
@@ -18,7 +18,7 @@
             <div class="content">
                 这是商品介绍这是商品介绍这是商品介绍这是商品介绍这是商品介绍这是商品介绍这是商品介绍这是商品介绍这是商品介绍这是商品介绍这是商品介绍这是商品介绍这是商品介绍这是商品介绍这是商品介绍这是商品介绍这是商品介绍
             </div>
-            <img src="/static/images/5de89a24a5f9a.jpg" class="goodImg" />
+            <img src="/static/images/user.png" class="goodImg" />
             <div class="footInfo">
                 <img src="/static/images/danbao.png" />
                 <span>担保交易</span>

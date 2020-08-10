@@ -58,7 +58,7 @@ export default {
             goodList: [
                 {
                     id: 0,
-                    goodImg: '/static/images/demo1.png',
+                    goodImg: '/static/images/user.png',
                     goodName: '三明治水果餐三明治水果餐',
                     price: 64,
                     watchNum: 1255,
@@ -68,7 +68,7 @@ export default {
                 },
                 {
                     id: 1,
-                    goodImg: '/static/images/demo1.png',
+                    goodImg: '/static/images/user.png',
                     goodName: '三明治水果餐三明治水果餐',
                     price: 64,
                     watchNum: 1255,
@@ -78,7 +78,7 @@ export default {
                 },
                 {
                     id: 2,
-                    goodImg: '/static/images/demo1.png',
+                    goodImg: '/static/images/user.png',
                     goodName: '三明治水果餐三明治水果餐',
                     price: 64,
                     watchNum: 1255,
@@ -88,7 +88,7 @@ export default {
                 },
                 {
                     id: 3,
-                    goodImg: '/static/images/demo1.png',
+                    goodImg: '/static/images/user.png',
                     goodName: '三明治水果餐三明治水果餐',
                     price: 64,
                     watchNum: 1255,

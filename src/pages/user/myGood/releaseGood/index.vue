@@ -18,10 +18,10 @@
                 </div>
                 <div class="imgWrap flex_row">
                     <div class="imgList">
-                        <img src="/static/images/demo1.png" />
+                        <img src="/static/images/user.png" />
                     </div>
                     <div class="imgList">
-                        <img src="/static/images/demo1.png" />
+                        <img src="/static/images/user.png" />
                     </div>
                     <div class="uploadImg">
                         <img src="/static/images/plus.png" />

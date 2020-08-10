@@ -2,7 +2,7 @@
     <div class="container">
         <div class="header">
             <div class="userImg">
-                <img src="/static/images/demo1.png" />
+                <img src="/static/images/user.png" />
             </div>
             <div class="right">
                 <div class="userName">胖墩</div>

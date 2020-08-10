@@ -2,7 +2,7 @@
     <div class="container">
         <div class="header">
             <div class="top">
-                <img src="/static/images/demo1.png" class="userImg" />
+                <img src="/static/images/user.png" class="userImg" />
                 <div class="userInfo">
                     <div class="userName">胖墩</div>
                     <div class="telphone">电话：13100000000</div>
@@ -145,37 +145,37 @@ export default {
                     date: '2019-06-10',
                     watchNum: 154,
                     likeNum: 100,
-                    imgUrl: '/static/images/5de89a24a5f9a.jpg'
+                    imgUrl: '/static/images/user.png'
                 },
                 {
                     title: '惯子如害子，九大惯子特征，家长必看家长必看家长必看',
                     date: '2019-06-10',
                     watchNum: 154,
                     likeNum: 100,
-                    imgUrl: '/static/images/5de89a24a5f9a.jpg'
+                    imgUrl: '/static/images/user.png'
                 },
                 {
                     title: '惯子如害子，九大惯子特征，家长必看家长必看家长必看',
                     date: '2019-06-10',
                     watchNum: 154,
                     likeNum: 100,
-                    imgUrl: '/static/images/5de89a24a5f9a.jpg'
+                    imgUrl: '/static/images/user.png'
                 }
             ],
             goods: [
                 {
                     title: '这里的风景真的好呀~',
-                    goodImg: '/static/images/demo1.png',
+                    goodImg: '/static/images/user.png',
                     price: 19
                 },
                 {
                     title: '这里的风景真的好呀~',
-                    goodImg: '/static/images/demo1.png',
+                    goodImg: '/static/images/user.png',
                     price: 19
                 },
                 {
                     title: '这里的风景真的好呀~',
-                    goodImg: '/static/images/demo1.png',
+                    goodImg: '/static/images/user.png',
                     price: 19
                 }
             ],
@@ -184,7 +184,7 @@ export default {
                     title: '上新了1个宝贝',
                     mouth: '12',
                     day: '02',
-                    imgUrl: '/static/images/demo1.png',
+                    imgUrl: '/static/images/user.png',
                     goodTitle: '宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝',
                     price: 64
                 },
@@ -198,15 +198,15 @@ export default {
             ],
             vedioList: [
                 {
-                    imgUrl: '/static/images/demo1.png',
+                    imgUrl: '/static/images/user.png',
                     loveNum: '12W'
                 },
                 {
-                    imgUrl: '/static/images/demo1.png',
+                    imgUrl: '/static/images/user.png',
                     loveNum: '12W'
                 },
                 {
-                    imgUrl: '/static/images/demo1.png',
+                    imgUrl: '/static/images/user.png',
                     loveNum: '12W'
                 }
             ],

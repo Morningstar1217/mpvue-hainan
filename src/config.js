@@ -4,7 +4,7 @@ var config = {}
 
 xxx()
     .then(res => {
-        config.defaultColor = 'color:#ddd'
+        config.defaultColor = ''
     })
     .catch(err => {
         console.error(err)

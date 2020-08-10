@@ -58,19 +58,19 @@ export default {
             articleList: [
                 {
                     title: '惯子如害子，九大惯子特征，家长必看家长必看家长必看',
-                    articleImg: '/static/images/5de89a24a5f9a.jpg',
+                    articleImg: '/static/images/user.png',
                     likeNum: 134,
                     watchNum: 283
                 },
                 {
                     title: '惯子如害子，九大惯子特征，家长必看家长必看家长必看',
-                    articleImg: '/static/images/5de89a24a5f9a.jpg',
+                    articleImg: '/static/images/user.png',
                     likeNum: 134,
                     watchNum: 283
                 },
                 {
                     title: '惯子如害子，九大惯子特征，家长必看家长必看家长必看',
-                    articleImg: '/static/images/5de89a24a5f9a.jpg',
+                    articleImg: '/static/images/user.png',
                     likeNum: 134,
                     watchNum: 283
                 }

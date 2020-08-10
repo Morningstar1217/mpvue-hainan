@@ -3,7 +3,7 @@
         <div class="header">
             <div class="top">
                 <div class="userImgWrap">
-                    <img src="/static/images/demo1.png" class="userImg" />
+                    <img src="/static/images/user.png" class="userImg" />
                     <img
                         src="/static/images/joinVip/vip3.png"
                         class="userVip"
@@ -190,21 +190,21 @@ export default {
                     date: '2019-06-10',
                     watchNum: 154,
                     likeNum: 100,
-                    imgUrl: '/static/images/5de89a24a5f9a.jpg'
+                    imgUrl: '/static/images/user.png'
                 },
                 {
                     title: '惯子如害子，九大惯子特征，家长必看家长必看家长必看',
                     date: '2019-06-10',
                     watchNum: 154,
                     likeNum: 100,
-                    imgUrl: '/static/images/5de89a24a5f9a.jpg'
+                    imgUrl: '/static/images/user.png'
                 },
                 {
                     title: '惯子如害子，九大惯子特征，家长必看家长必看家长必看',
                     date: '2019-06-10',
                     watchNum: 154,
                     likeNum: 100,
-                    imgUrl: '/static/images/5de89a24a5f9a.jpg'
+                    imgUrl: '/static/images/user.png'
                 }
             ]
         }

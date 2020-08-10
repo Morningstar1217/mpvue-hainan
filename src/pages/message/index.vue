@@ -60,28 +60,28 @@ export default {
         return {
             messageList: [
                 {
-                    userImg: '/static/images/demo1.png',
+                    userImg: '/static/images/user.png',
                     messageNum: 2,
                     userName: '胖墩',
                     content: '这是一条消息',
                     date: '23:59'
                 },
                 {
-                    userImg: '/static/images/demo1.png',
+                    userImg: '/static/images/user.png',
                     messageNum: 1,
                     userName: '胖墩',
                     content: '这是一条消息',
                     date: '9:15'
                 },
                 {
-                    userImg: '/static/images/demo1.png',
+                    userImg: '/static/images/user.png',
                     messageNum: 4,
                     userName: '胖墩',
                     content: '这是一条消息',
                     date: '9:15'
                 },
                 {
-                    userImg: '/static/images/demo1.png',
+                    userImg: '/static/images/user.png',
                     messageNum: 2,
                     userName: '胖墩',
                     content: '这是一条消息',

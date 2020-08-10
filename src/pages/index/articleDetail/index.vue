@@ -3,7 +3,7 @@
         <div class="main">
             <div class="title">{{ aircleDetail.title }}</div>
             <div class="userInfoWrap flex_row">
-                <img src="/static/images/demo1.png" />
+                <img src="/static/images/user.png" />
                 <div class="userInfo">
                     <div class="userName">胖墩</div>
                     <div class="telphone">13100000000</div>
@@ -14,14 +14,14 @@
             </div>
             <div class="articleBg">宝妈传，打造宝妈们的传说</div>
             <div class="adImg">
-                <img src="/static/images/5de89a24a5f9a.jpg" />
+                <img src="/static/images/user.png" />
                 <div class="toDetail">换成我的</div>
             </div>
             <div class="articleText">
                 <rich-text :nodes="aircleDetail.detail"></rich-text>
             </div>
             <div class="userWrap">
-                <img src="/static/images/demo1.png" class="userImg" />
+                <img src="/static/images/user.png" class="userImg" />
                 <div class="userName">胖墩</div>
                 <div class="company">公司名称</div>
                 <div class="btnWrap flex_row">
@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="adImg">
-                <img src="/static/images/5de89a24a5f9a.jpg" />
+                <img src="/static/images/user.png" />
                 <div class="toDetail">换成我的</div>
             </div>
         </div>

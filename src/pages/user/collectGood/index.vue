@@ -27,27 +27,27 @@ export default {
         return {
             goods: [
                 {
-                    goodImg: '/static/images/demo1.png',
+                    goodImg: '/static/images/user.png',
                     goodTitle: '衣服衣服衣服衣服衣服衣服衣服衣服衣服衣服',
                     price: 64
                 },
                 {
-                    goodImg: '/static/images/demo1.png',
+                    goodImg: '/static/images/user.png',
                     goodTitle: '衣服衣服衣服衣服衣服衣服衣服衣服衣服衣服',
                     price: 64
                 },
                 {
-                    goodImg: '/static/images/demo1.png',
+                    goodImg: '/static/images/user.png',
                     goodTitle: '衣服衣服衣服衣服衣服衣服衣服衣服衣服衣服',
                     price: 64
                 },
                 {
-                    goodImg: '/static/images/demo1.png',
+                    goodImg: '/static/images/user.png',
                     goodTitle: '衣服衣服衣服衣服衣服衣服衣服衣服衣服衣服',
                     price: 64
                 },
                 {
-                    goodImg: '/static/images/demo1.png',
+                    goodImg: '/static/images/user.png',
                     goodTitle: '衣服衣服衣服衣服衣服衣服衣服衣服衣服衣服',
                     price: 64
                 }

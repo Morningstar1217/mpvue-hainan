@@ -2,7 +2,7 @@
     <div class="container">
         <div class="header">
             <div class="dataWrap flex_row">
-                <img src="/static/images/demo1.png" class="userImg" />
+                <img src="/static/images/user.png" class="userImg" />
                 <div class="userInfo">
                     <div class="userName">胖墩</div>
                     <div class="isVipWrap flex_row">
@@ -47,7 +47,7 @@
                 <div class="adListWrap">
                     <div class="adList">
                         <div class="adImg">
-                            <img src="/static/images/5de89a24a5f9a.jpg" />
+                            <img src="/static/images/user.png" />
                         </div>
                         <div class="adConsole flex_row">
                             <div>删除</div>
@@ -64,7 +64,7 @@
                 <div class="adListWrap">
                     <div class="adList">
                         <div class="adImg">
-                            <img src="/static/images/5de89a24a5f9a.jpg" />
+                            <img src="/static/images/user.png" />
                         </div>
                         <div class="adConsole flex_row">
                             <div>删除</div>

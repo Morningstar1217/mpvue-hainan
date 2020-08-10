@@ -24,25 +24,25 @@ export default {
         return {
             fens: [
                 {
-                    userImg: '/static/images/demo1.png',
+                    userImg: '/static/images/user.png',
                     userName: '胖墩',
                     fensNum: 12,
                     isLiked: true
                 },
                 {
-                    userImg: '/static/images/demo1.png',
+                    userImg: '/static/images/user.png',
                     userName: '胖墩',
                     fensNum: 12,
                     isLiked: false
                 },
                 {
-                    userImg: '/static/images/demo1.png',
+                    userImg: '/static/images/user.png',
                     userName: '胖墩',
                     fensNum: 12,
                     isLiked: false
                 },
                 {
-                    userImg: '/static/images/demo1.png',
+                    userImg: '/static/images/user.png',
                     userName: '胖墩',
                     fensNum: 12,
                     isLiked: true

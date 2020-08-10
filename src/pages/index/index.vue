@@ -30,7 +30,7 @@
         </div>
         <div class="main">
             <div class="adImg">
-                <img src="/static/images/5de89a24a5f9a.jpg" />
+                <img src="/static/images/user.png" />
             </div>
             <div class="mainMenuWrap">
                 <div
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div class="hr"></div>
-            <div class="articleWrap">
+            <!-- <div class="articleWrap">
                 <div
                     class="articleList"
                     v-for="(item, index) in articleList"
@@ -93,9 +93,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="adImg">
-                <img src="/static/images/5de89a24a5f9a.jpg" />
+                <img src="/static/images/user.png" />
                 <div class="toDetail">查看详情</div>
             </div>
             <div class="articleWrap">
@@ -234,42 +234,42 @@ export default {
             menuList2: [
                 {
                     id: 0,
-                    imgUrl: '/static/images/demo1.png',
+                    imgUrl: '/static/images/user.png',
                     title: '最新资讯'
                 },
                 {
                     id: 0,
-                    imgUrl: '/static/images/demo1.png',
+                    imgUrl: '/static/images/user.png',
                     title: '最新资讯'
                 },
                 {
                     id: 0,
-                    imgUrl: '/static/images/demo1.png',
+                    imgUrl: '/static/images/user.png',
                     title: '最新资讯'
                 },
                 {
                     id: 0,
-                    imgUrl: '/static/images/demo1.png',
+                    imgUrl: '/static/images/user.png',
                     title: '最新资讯'
                 },
                 {
                     id: 0,
-                    imgUrl: '/static/images/demo1.png',
+                    imgUrl: '/static/images/user.png',
                     title: '最新资讯'
                 },
                 {
                     id: 0,
-                    imgUrl: '/static/images/demo1.png',
+                    imgUrl: '/static/images/user.png',
                     title: '最新资讯'
                 },
                 {
                     id: 0,
-                    imgUrl: '/static/images/demo1.png',
+                    imgUrl: '/static/images/user.png',
                     title: '最新资讯'
                 },
                 {
                     id: 0,
-                    imgUrl: '/static/images/demo1.png',
+                    imgUrl: '/static/images/user.png',
                     title: '最新资讯'
                 }
             ],
@@ -279,7 +279,7 @@ export default {
                     title: '惯子如害子，九大惯子特征，家长必看',
                     tag: '女性',
                     date: '刚刚',
-                    imgUrl: '/static/images/5de89a24a5f9a.jpg',
+                    imgUrl: '/static/images/user.png',
                     commentNum: 29.8,
                     isTop: true
                 },
@@ -288,7 +288,7 @@ export default {
                     title: '惯子如害子，九大惯子特征，家长必看',
                     tag: '育儿',
                     date: '2019-12-07',
-                    imgUrl: '/static/images/5de89a24a5f9a.jpg',
+                    imgUrl: '/static/images/user.png',
                     commentNum: 29.8,
                     isTop: true
                 }
@@ -366,6 +366,47 @@ export default {
     async mounted() {
         this.defaultColor = await config.defaultColor
         this.getData()
+    },
+    onReachBottom() {
+        let res = [
+            {
+                id: 0,
+                title: '惯子如害子，九大惯子特征，家长必看',
+                tag: '女性',
+                date: '刚刚',
+                imgUrl: '/static/images/user.png',
+                commentNum: 29.8,
+                isTop: true
+            },
+            {
+                id: 1,
+                title: '惯子如害子，九大惯子特征，家长必看',
+                tag: '育儿',
+                date: '2019-12-07',
+                imgUrl: '/static/images/user.png',
+                commentNum: 29.8,
+                isTop: true
+            },
+            {
+                id: 0,
+                title: '惯子如害子，九大惯子特征，家长必看',
+                tag: '女性',
+                date: '刚刚',
+                imgUrl: '/static/images/user.png',
+                commentNum: 29.8,
+                isTop: true
+            },
+            {
+                id: 1,
+                title: '惯子如害子，九大惯子特征，家长必看',
+                tag: '育儿',
+                date: '2019-12-07',
+                imgUrl: '/static/images/user.png',
+                commentNum: 29.8,
+                isTop: true
+            }
+        ]
+        this.articleList = [...this.articleList, ...res]
     }
 }
 </script>

@@ -33,7 +33,7 @@
         </div>
         <div class="main">
             <div class="adImg">
-                <img src="/static/images/5de89a24a5f9a.jpg" />
+                <img src="/static/images/user.png" />
             </div>
             <div class="contentWrap">
                 <div
@@ -149,7 +149,7 @@ export default {
             selectedIndex: 0,
             circleList: [
                 {
-                    imgUrl: '/static/images/demo1.png',
+                    imgUrl: '/static/images/user.png',
                     title: '这里的风景真的好呀~',
                     price: 64,
                     likeNum: 28,
@@ -157,7 +157,7 @@ export default {
                     userImg: '/static/images/headImg.png'
                 },
                 {
-                    imgUrl: '/static/images/demo3.png',
+                    imgUrl: '/static/images/user.png',
                     title: '这里的风景真的好呀~',
                     price: 64,
                     likeNum: 28,
@@ -165,7 +165,7 @@ export default {
                     userImg: '/static/images/headImg.png'
                 },
                 {
-                    imgUrl: '/static/images/demo1.png',
+                    imgUrl: '/static/images/user.png',
                     title: '这里的风景真的好呀~',
                     price: 64,
                     likeNum: 28,
@@ -173,7 +173,7 @@ export default {
                     userImg: '/static/images/headImg.png'
                 },
                 {
-                    imgUrl: '/static/images/demo3.png',
+                    imgUrl: '/static/images/user.png',
                     title: '这里的风景真的好呀~',
                     price: 64,
                     likeNum: 28,
@@ -181,7 +181,7 @@ export default {
                     userImg: '/static/images/headImg.png'
                 },
                 {
-                    imgUrl: '/static/images/demo1.png',
+                    imgUrl: '/static/images/user.png',
                     title: '这里的风景真的好呀~',
                     price: 64,
                     likeNum: 28,

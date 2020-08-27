@@ -210,6 +210,7 @@ export default {
         }
     },
     mounted() {
+        console.log(this.globalData)
         wx.setNavigationBarTitle({
             title: '我的'
         })

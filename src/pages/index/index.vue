@@ -362,7 +362,16 @@ export default {
         getData() {}
     },
     mounted() {
-        this.getData()
+        wx.getStorage({
+            key: 'config',
+            success: res => {
+                this.globalData = res.data
+                this.defaultColor = `color:${res.data.btnfontcolor}`
+            },
+            fail: () => {
+                console.log(fail)
+            }
+        })
     },
     onReachBottom() {
         let res = [

@@ -25,18 +25,12 @@
         "pages/user/myGood/saleGood/main",
         "pages/user/myWeb/main"
     ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fd4835",
-        "navigationBarTitleText": "宝妈传",
-        "navigationBarTextStyle": "white"
-    },
+    "window": {},
     "tabBar": {
         "color": "#333",
         "backgroundColor": "#fff",
         "selectedColor": "#fd4835",
         "borderStyle": "white",
-
         "list": [
             {
                 "text": "首页",

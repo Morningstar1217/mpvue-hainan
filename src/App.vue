@@ -14,22 +14,59 @@ export default {
             logs.unshift(Date.now())
             mpvue.setStorageSync('logs', logs)
         }
-
-        let params = {
-            do: 'GetConfig'
-        }
-
-        this.$http
-            .get(params)
-            .then(res => {
-                this.globalData = res.data
-            })
-            .catch(err => {
-                console.log(err)
-            })
     },
     log() {
         console.log(`log at:${Date.now()}`)
+    },
+    onLaunch() {
+        this.getWxAppDetail()
+        this.getBottomConfig()
+    },
+    methods: {
+        getWxAppDetail() {
+            let params = {
+                do: 'GetConfig'
+            }
+
+            this.$http
+                .get(params)
+                .then(res => {
+                    wx.setStorage({
+                        key: 'config',
+                        data: res.data
+                    })
+                    wx.setNavigationBarTitle({
+                        title: res.data.headtitle
+                    })
+                    wx.setNavigationBarColor({
+                        frontColor: '#ffffff',
+                        backgroundColor: res.data.headcolor,
+                        animation: {
+                            duration: 0,
+                            timingFunc: 'linear'
+                        },
+                        success: result => {},
+                        fail: () => {},
+                        complete: () => {}
+                    })
+                })
+                .catch(err => {
+                    console.log(err)
+                })
+        },
+        getBottomConfig() {
+            let params = {
+                do: 'GetBottommenu'
+            }
+            this.$http
+                .get(params)
+                .then(res => {
+                    console.log(res)
+                })
+                .catch(err => {
+                    console.log(err)
+                })
+        }
     }
 }
 </script>

@@ -1,24 +1,60 @@
-// request.js
-const request = options => {
+import siteinfo from '../siteinfo'
+let host = siteinfo.siteroot
+
+function request(method, data, header = {}) {
+    wx.showLoading({
+        title: '加载中'
+    })
     return new Promise((resolve, reject) => {
-        const { data, method } = options
-        if (data && method !== 'get') {
-            options.data = JSON.stringify(data)
-        }
-        wx.request({
-            header: { 'Content-Type': 'application/json' },
-            ...options,
-            success: function (res) {
-                if (res.data.code === 0) {
-                    resolve(res.data)
-                } else {
-                    reject(res.data)
+        wx.login({
+            timeout: 10000,
+            success: res => {
+                data = {
+                    ...data,
+                    sign: res.code,
+                    i: siteinfo.acid,
+                    m: siteinfo.name,
+                    from: 'wxapp',
+                    c: 'entry',
+                    a: 'wxapp'
                 }
+                wx.request({
+                    url: host,
+                    method,
+                    data,
+                    headers: {
+                        'content-type': 'application/json'
+                    },
+                    success: function (res) {
+                        wx.hideLoading()
+                        resolve(res.data)
+                    },
+                    fail: function (error) {
+                        wx.hideLoading()
+                        reject(false)
+                    },
+                    complete: function () {
+                        wx.hideLoading()
+                    }
+                })
             },
-            fail: function (res) {
-                reject(res.data)
+            fail: err => {
+                console.log(err)
             }
         })
     })
 }
-export default request
+
+function get(obj) {
+    return request('GET', obj)
+}
+
+function post(obj) {
+    return request('POST', obj)
+}
+
+export default {
+    request,
+    get,
+    post
+}

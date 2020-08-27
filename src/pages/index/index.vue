@@ -200,8 +200,6 @@
 </template>
 
 <script>
-import { xxx } from '@/api/user.js'
-import { config } from '@/config'
 export default {
     data() {
         return {
@@ -363,8 +361,7 @@ export default {
         },
         getData() {}
     },
-    async mounted() {
-        this.defaultColor = await config.defaultColor
+    mounted() {
         this.getData()
     },
     onReachBottom() {

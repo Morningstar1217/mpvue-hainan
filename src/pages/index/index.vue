@@ -200,6 +200,7 @@
 </template>
 
 <script>
+import { changeTitle } from '../../utils/common'
 export default {
     data() {
         return {
@@ -362,6 +363,7 @@ export default {
         getData() {}
     },
     mounted() {
+        changeTitle()
         wx.getStorage({
             key: 'config',
             success: res => {

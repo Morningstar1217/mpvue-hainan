@@ -27,27 +27,12 @@ export default {
             let params = {
                 do: 'GetConfig'
             }
-
             this.$http
                 .get(params)
                 .then(res => {
                     wx.setStorage({
                         key: 'config',
                         data: res.data
-                    })
-                    wx.setNavigationBarTitle({
-                        title: res.data.headtitle
-                    })
-                    wx.setNavigationBarColor({
-                        frontColor: '#ffffff',
-                        backgroundColor: res.data.headcolor,
-                        animation: {
-                            duration: 0,
-                            timingFunc: 'linear'
-                        },
-                        success: result => {},
-                        fail: () => {},
-                        complete: () => {}
                     })
                 })
                 .catch(err => {

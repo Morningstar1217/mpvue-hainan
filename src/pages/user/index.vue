@@ -181,6 +181,7 @@
 </template>
 
 <script>
+import { changeTitle } from "../../utils/common";
 export default {
     data() {
         return {
@@ -210,10 +211,7 @@ export default {
         }
     },
     mounted() {
-        console.log(this.globalData)
-        wx.setNavigationBarTitle({
-            title: '我的'
-        })
+        changeTitle()
     },
     methods: {
         toJoinVip() {
